@@ -20,5 +20,9 @@ class TestCase(unittest.TestCase):
         input = "747477h7"
         self.assertFalse(check_pwd(input))
 
+    def testNoDigit(self):
+        input = "Uhhhhdgd"
+        self.assertFalse(check_pwd(input))
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

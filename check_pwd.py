@@ -14,4 +14,7 @@ def check_pwd(password):
     if len(password) not in range(8, 21):
         return length
 
+    if not any(char.islower() for char in password):
+        return lower
+
     return True

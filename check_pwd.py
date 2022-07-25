@@ -8,4 +8,7 @@ def check_pwd(password):
     digit = False
     sym = False
 
+    if len(password) == 0:
+        return len0
+
     return True

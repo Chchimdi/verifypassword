@@ -12,5 +12,9 @@ class TestCase(unittest.TestCase):
         input = "1111144"
         self.assertFalse(check_pwd(input))
 
+    def testNoLower(self):
+        input = "111117777"
+        self.assertFalse(check_pwd(input))
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

@@ -17,4 +17,7 @@ def check_pwd(password):
     if not any(char.islower() for char in password):
         return lower
 
+    if not any(char.isupper() for char in password):
+        return upper
+
     return True

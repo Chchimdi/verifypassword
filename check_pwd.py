@@ -20,4 +20,7 @@ def check_pwd(password):
     if not any(char.isupper() for char in password):
         return upper
 
+    if not any(char.isdigit() for char in password):
+        return digit
+
     return True

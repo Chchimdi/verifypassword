@@ -8,6 +8,9 @@ class TestCase(unittest.TestCase):
         input = ""
         self.assertFalse(check_pwd(input))
 
-  
+    def testLen7(self):
+        input = "1111144"
+        self.assertFalse(check_pwd(input))
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

@@ -24,5 +24,9 @@ class TestCase(unittest.TestCase):
         input = "Uhhhhdgd"
         self.assertFalse(check_pwd(input))
 
+    def testNoSymbol(self):
+        input = "111jjjjUU"
+        self.assertFalse(check_pwd(input))
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

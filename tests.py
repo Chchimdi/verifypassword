@@ -28,5 +28,9 @@ class TestCase(unittest.TestCase):
         input = "111jjjjUU"
         self.assertFalse(check_pwd(input))
 
+    def testCorrectPass(self):
+        input = "gFF7ZA$0A%(`j9!`YAP6"
+        self.assertTrue(check_pwd(input))
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
